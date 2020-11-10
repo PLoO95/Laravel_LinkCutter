@@ -8,12 +8,18 @@
 		Link -> define link model, use parameter BigLink and SmallSink
 	
 	Controller:
-		LinkController -> 
+		LinkController -> controll all action in site, witch work at Link(Model)
 		
 	View:
-	
+        link.create -> Site with form to LinkCut
+        link.list -> Show links in database and action button, delete/open
+        list.message -> Show message after action like delete/create
 	
 	Routing:
-	
+	    Get     '/'             -> return link.create view.
+        Get     '/link'         -> return link.list view with parameters
+        Get     '/link/{id}'    -> open site use shorUrl, or fail if do not exist in database
+        Post    '/link'         -> create smallUrl in database or fail if form parameter is wrong
+        Delete  '/link/{id}'    -> delete url form database where $id is same as smallUrl
 		
 	
