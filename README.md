@@ -23,7 +23,7 @@
         Delete  '/link/{id}'    -> delete url form database where $id is same as smallUrl
         
    In future:
-       1. Add config fail, where define numeral system parameters
+       1. Add config file, where define numeral system parameters
        2. Add admin controll panel
        3. Add max url life cycle
        4. Publish in my domain
